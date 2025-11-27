@@ -5,7 +5,7 @@ if len(sys.argv) == 2:
     string = sys.argv[1]
 else:
     script_name = sys.argv[0]
-    string = "Shrinivas"
+    string = "madam"
 
 cleaned_text = ''.join(char.lower() for char in text if char.isalnum())
 
