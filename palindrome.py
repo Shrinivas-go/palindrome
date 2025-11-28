@@ -1,15 +1,11 @@
 import sys
-
 if len(sys.argv) == 2:
     script_name = sys.argv[0]
-    text = sys.argv[1]
+    name = sys.argv[1]
 else:
-    script_name = sys.argv[0]
-    text = "Madam"
+    name = "gadag"
 
-cleaned_text = ''.join(char.lower() for char in text if char.isalnum())
-
-if cleaned_text == cleaned_text[::-1]:
-    print("Palindrome")
+if name == name[::-1]:
+    print(f"{name} is a palindrome")
 else:
-    print("Not a palindrome")
+    print(f"{name} is not a palindrome")
